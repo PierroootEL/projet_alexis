@@ -8,15 +8,15 @@
 		Liste des transporteurs disponibles, et ajout possible
 		Voir les status d'envoi / d'exports et pouvoir annuler les expéditions
 
-		
+
 ## Interface :
-	### Utilisateur :
+	`Utilisateur` :
 		Liste des transporteurs disponibles
 		Liste des modes de livraison disponibles
 		Prix d'envoi calculé en fonction des deux derniers critères
 		Date de livraison estimée
 
-	### Administrateur
+	`Administrateur` :
 		N° de commande
 		Nom du livreur
 		Date de livraison (estimée)
