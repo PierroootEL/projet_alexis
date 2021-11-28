@@ -1,4 +1,4 @@
-# Deux pages à développé :
+## Deux pages à développé :
 	-Lors d'une commande
 		Ajout d'une page avec l'équipe qui gère les commandes afin de permettre le choix de l'utilisateur
 		de choisir le livreur de son choix en fonction du pays de livraison, afficher les délais de 
