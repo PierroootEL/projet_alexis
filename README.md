@@ -1,10 +1,10 @@
 ## Deux pages à développé :
-	-Lors d'une commande
+	Lors d'une commande :
 		Ajout d'une page avec l'équipe qui gère les commandes afin de permettre le choix de l'utilisateur
 		de choisir le livreur de son choix en fonction du pays de livraison, afficher les délais de 
 		livraison.
 	
-	-Interface d'administration
+	Interface d'administration :
 		Liste des transporteurs disponibles, et ajout possible
 		Voir les status d'envoi / d'exports et pouvoir annuler les expéditions
 
