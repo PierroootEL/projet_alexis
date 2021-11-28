@@ -8,32 +8,22 @@
 		Liste des transporteurs disponibles, et ajout possible
 		Voir les status d'envoi / d'exports et pouvoir annuler les expéditions
 
+		
+## Interface :
+	### Utilisateur :
+		Liste des transporteurs disponibles
+		Liste des modes de livraison disponibles
+		Prix d'envoi calculé en fonction des deux derniers critères
+		Date de livraison estimée
 
-# Condition requise pour l'envoi d'une commande :
-Article(s) commandé(s) doivent être en stock
-Compte utilisateur
-	(
-	Pays d'expedition
-	Adresse
-	Nom Prenom
-	)
-
-
-Interface :
-	A voir avec le design choisi par l'équipe qui gère les commandes, mais dans l'idée, une liste avec tous les
-	transporteurs dispo, une parti d'infos en fonction du transporteur sélectionné, et un bouton de validation.
-
-	Dans l'inferface d'administration,
-	Une sorte de tableau avec les colonnes :
-		-N° de commande
-		-Poids du colis
-		-Transporteur choisi
-		-Adresse de destination
-		-Date de livraison estimé
-		-Bouton pour la suppresion d'expédition
+	### Administrateur
+		N° de commande
+		Nom du livreur
+		Date de livraison (estimée)
+		Informations clients ( Nom, Prénom, Adresse, N° de Tel)
 
 Stockage :
-	Base de donnée
+	Fichier CSV
 
 
 # Fichier d'entrée
