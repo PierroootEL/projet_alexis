@@ -38,6 +38,8 @@ Stockage :
 
 # Fichier d'entrée
 |  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
+| :---------: | :--------------: |  :-----------:  |  :-----:  |  :-------:  |
 
 # Fichier de sortie
 |  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
+| :---------: | :--------------: |  :-----------:  |  :-----:  |  :-------:  |
