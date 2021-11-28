@@ -37,9 +37,7 @@ Stockage :
 
 
 # Fichier d'entrée
-A voir avec les gestionnaires des commandes
+|  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
 
 # Fichier de sortie
 |  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
-| :---------: | :--------------: |  :-----------:  |  :-----:  |  :-------:  |
-|   Content   |      Content     |     Content     |  Content  |   Content   |
