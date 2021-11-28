@@ -10,17 +10,17 @@
 
 
 ## Interface :
-	`Utilisateur` :
-		Liste des transporteurs disponibles
-		Liste des modes de livraison disponibles
-		Prix d'envoi calculé en fonction des deux derniers critères
-		Date de livraison estimée
+```Utilisateur``` :
+	Liste des transporteurs disponibles
+	Liste des modes de livraison disponibles
+	Prix d'envoi calculé en fonction des deux derniers critères
+	Date de livraison estimée
 
-	`Administrateur` :
-		N° de commande
-		Nom du livreur
-		Date de livraison (estimée)
-		Informations clients ( Nom, Prénom, Adresse, N° de Tel)
+```Administrateur``` :
+	N° de commande
+	Nom du livreur
+	Date de livraison (estimée)
+	Informations clients ( Nom, Prénom, Adresse, N° de Tel)
 
 Stockage :
 	Fichier CSV
