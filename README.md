@@ -22,14 +22,27 @@
 		Date de livraison (estimée)
 		Informations clients ( Nom, Prénom, Adresse, N° de Tel)
 
-Stockage :
+## Condition pour lancer une livraison :
+    Le poids de la livraison < poids max du livreur choisi
+    Adresse de livraison acceptée par le livreur
+
+## Stockage :
 	Fichier CSV
 
+## Partie utilisateur :
+### Fichier d'entrée :
+|  numéro de commande   |  id du transporteur  |  id du client  | poids total des articles |
+| :-------------------: | :------------------: |  :----------:  |  :--------------------:  |
 
-# Fichier d'entrée
-|  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
-| :---------: | :--------------: |  :-----------:  |  :-----:  |  :-------:  |
+### Fichier de sortie
+|  numéro de commande   |  id du transporteur  |  id du client  |  addresse de livraison  |  date de livraison estimée  |
+| :-------------------: | :------------------: |  :----------:  |  :-------------------:  |  :-----------------------:  |
 
-# Fichier de sortie
-|  order_nb   |  transporter_id  |  schedule_time  |  address  |  client_id  |
-| :---------: | :--------------: |  :-----------:  |  :-----:  |  :-------:  |
+## Partie administrateur :
+### Fichier d'entrée :
+    Fichier de sortie de la première partie
+|  numéro de commande   |  id du transporteur  |  id du client  |  addresse de livraison  |  date de livraison estimée  |
+| :-------------------: | :------------------: |  :----------:  |  :-------------------:  |  :-----------------------:  |
+
+### Fichier de sortie :
+    Aucun pour le moment
