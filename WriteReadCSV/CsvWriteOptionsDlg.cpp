@@ -15,6 +15,8 @@ CsvWriteOptionsDlg::CsvWriteOptionsDlg(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DIALOG_WRITE, pParent)
 	, write_prenom(_T("Entrer votre prenom"))
 	, write_nom(_T("Entrer votre nom"))
+	, write_male(0)
+	, write_female(0)
 {
 
 }
@@ -28,6 +30,8 @@ void CsvWriteOptionsDlg::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Text(pDX, IDC_CSV_WRITE_PRENOM, write_prenom);
 	DDX_Text(pDX, IDC_CSV_WRITE_NOM, write_nom);
+	DDX_Radio(pDX, IDC_RADIO_WRITE_M, write_male);
+	DDX_Radio(pDX, IDC_RADIO_WRITE_F, write_female);
 }
 
 

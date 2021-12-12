@@ -23,4 +23,6 @@ protected:
 public:
 	CString write_prenom;
 	CString write_nom;
+	int write_male;
+	int write_female;
 };
