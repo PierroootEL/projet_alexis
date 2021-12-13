@@ -45,8 +45,6 @@ public:
 private:
 	CString text_prenom;
 	CString text_nom;
-	int btn_male;
-	int btn_female;
 public:
 	afx_msg void OnAideAfficher();
 };

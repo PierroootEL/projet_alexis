@@ -33,7 +33,6 @@
 #define IDD_DIALOG_READ                 312
 #define IDC_EDIT_NOM                    1000
 #define IDC_EDIT_PRENOM                 1001
-#define IDC_RADIO_MALE                  1002
 #define IDC_RADIO_FEMALE                1003
 #define ID_AIDE_HELP                    32771
 #define ID_AIDE_AFFICHER                32772

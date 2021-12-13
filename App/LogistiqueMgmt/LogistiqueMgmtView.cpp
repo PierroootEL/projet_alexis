@@ -14,11 +14,15 @@
 #include "LogistiqueMgmtView.h"
 #include "CSV_WRITE.h"
 #include "CSV_READ.h"
+#include "string"
+#include "iostream"
+#include "fstream"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
+using namespace std;
 
 // CLogistiqueMgmtView
 
@@ -64,8 +68,24 @@ void CLogistiqueMgmtView::OnDraw(CDC* pDC)
 	CRect clientRect;
 	GetClientRect(clientRect);
 	pDC->FillSolidRect(clientRect, RGB(255, 255, 0));
+	pDC->TextOutW(200, 200, text_prenom);
+	pDC->TextOutW(250, 250, text_nom);
+
+		ofstream monFlux("C:/Users/Pierre/Documents/projet_alexis/WriteReadCSV/fichier_txt_test.txt");
+		// std::cout << "Hello World!\n";
 
 
+		if (monFlux) {
+			
+			// Tout est OK
+			char* string = (LPCTSTR)text_prenom;
+
+			monFlux << string << endl;
+			monFlux << text_nom << endl;
+		}
+		else {
+			cout << "ERREUR : Impossible d'ouvrir le fichier" << endl;
+		}
 }
 
 void CLogistiqueMgmtView::OnRButtonUp(UINT /* nFlags */, CPoint point)
@@ -113,8 +133,6 @@ void CLogistiqueMgmtView::OnAideHelp()
 	if (csvWrite.DoModal() == IDOK) {
 		text_prenom = csvWrite.text_prenom;
 		text_nom = csvWrite.text_nom;
-		btn_male = csvWrite.btn_male;
-		btn_female = csvWrite.btn_female;
 	}
 }
 

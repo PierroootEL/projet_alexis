@@ -15,8 +15,6 @@ CSV_WRITE::CSV_WRITE(CWnd* pParent /*=nullptr*/)
 	: CDialogEx(IDD_DIALOG_WRITE, pParent)
 	, text_prenom(_T("Entrer le prénom"))
 	, text_nom(_T("Entrer le nom"))
-	, btn_male(0)
-	, btn_female(0)
 {
 
 }
@@ -30,8 +28,6 @@ void CSV_WRITE::DoDataExchange(CDataExchange* pDX)
 	CDialogEx::DoDataExchange(pDX);
 	DDX_Text(pDX, IDC_EDIT_PRENOM, text_prenom);
 	DDX_Text(pDX, IDC_EDIT_NOM, text_nom);
-	DDX_Radio(pDX, IDC_RADIO_MALE, btn_male);
-	DDX_Radio(pDX, IDC_RADIO_FEMALE, btn_female);
 }
 
 
