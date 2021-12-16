@@ -76,12 +76,11 @@ void CLogistiqueMgmtView::OnDraw(CDC* pDC)
 
 
 		if (monFlux) {
-			
 			// Tout est OK
-			char* string = (LPCTSTR)text_prenom;
 
-			monFlux << string << endl;
+			monFlux << text_prenom << endl;
 			monFlux << text_nom << endl;
+
 		}
 		else {
 			cout << "ERREUR : Impossible d'ouvrir le fichier" << endl;
